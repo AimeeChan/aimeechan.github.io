@@ -52,6 +52,64 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2013-10-22T08:32:36.000Z"><a href="/2013/10/22/html5css3-note1/">10月 22 2013</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2013/10/22/html5css3-note1/">响应式设计之媒体查询</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3>媒体查询</h3>
+<ul>
+<li>查询媒体设备的情况，加载相应的css文件<pre><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">media</span>=<span class="value">"link rel="</span><span class="attribute">stylesheet</span>" <span class="attribute">media</span>=<span class="value">"screen and (orientation:portrait)"</span> <span class="attribute">href</span>=<span class="value">"portraitscreen.css"</span>/&gt;</span></code></pre>
+</li>
+<li>媒体查询之间用分号分隔，没有后续表达式(例如：projection，后面没有任何特性/值得组合,意味着只要是projection就满足条件)</li>
+<li>可在css样式表中使用媒体查询，<pre><code>  <span class="variable">@media</span> screen and (<span class="keyword">max</span>-device-width: <span class="number">400</span>px) {
+  h1 { <span class="keyword">color</span>: green }
+  }<span class="comment">//屏幕小于等于400px的设备上，h1元素变绿</span></code></pre>
+</li>
+<li>可使用@import 按条件引入其他样式<pre><code>  @<span class="import"><span class="keyword">import</span> url<span class="container">("<span class="title">phone</span>.<span class="title">css</span>")</span> screen and <span class="container">(<span class="title">max</span>-<span class="title">width</span>:360<span class="title">px</span>)</span>;</span>//最大宽度为<span class="number">360</span>px的设备加载phone.css</code></pre>
+  *使用@import会增加HTTP请求，请谨慎使用  </li>
+</ul>
+<h3>媒体查询可检测的特性</h3>
+<ul>
+<li>width：视口宽度。  </li>
+<li>height：视口高度。  </li>
+<li>device-width：渲染表面的宽度（对我们来说，就是设备屏幕的宽度）。  </li>
+<li>device-height：渲染表面的高度（对我们来说，就是设备屏幕的高度）。  </li>
+<li>orientation：检查设备处于横向还是纵向。  </li>
+<li>aspect-ratio：基于视口宽度和高度的宽高比。一个16∶9 比例的显示屏可以这样定义aspect-ratio: 16/9。  </li>
+<li>device-aspect-ratio：和aspect-ratio 类似，基于设备渲染平面宽度和高度的宽高比。  </li>
+<li>color：每种颜色的位数。例如min-color: 16 会检测设备是否拥有16 位颜色。</li>
+<li>color-index：设备的颜色索引表中的颜色数。值必须是非负整数。</li>
+<li>monochrome：检测单色帧缓冲区中每像素所使用的位数。值必须是非负整数，如monochrome: 2。</li>
+<li>resolution：用来检测屏幕或打印机的分辨率，如min-resolution:300dpi。还可以接受每厘米像素点数的度量值，如min-resolution: 118dpcm。  </li>
+<li>scan：电视机的扫描方式，值可设为progressive（逐行扫描）或interlace（隔行扫描）。如720p HD 电视（720p 的p 即表明是逐行扫描）匹配scan: progressive，而1080i HD 电视（1080i 中的i 表明是隔行扫描）匹配scan: interlace。<br>*grid：用来检测输出设备是网格设备还是位图设备。</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2013-10-22T02:35:56.000Z"><a href="/2013/10/22/diary1/">10月 22 2013</a></time>
       
       
@@ -137,6 +195,8 @@
   
     <li><a href="/categories/201310/">201310</a><small>2</small></li>
   
+    <li><a href="/categories/笔记，HTML5，CSS3,响应式设计/">笔记，HTML5，CSS3,响应式设计</a><small>1</small></li>
+  
   </ul>
 </div>
 
@@ -146,7 +206,11 @@
   <h3 class="title">标签</h3>
   <ul class="entry">
   
+    <li><a href="/tags/响应式设计/">响应式设计</a><small>1</small></li>
+  
     <li><a href="/tags/碎碎念/">碎碎念</a><small>2</small></li>
+  
+    <li><a href="/tags/笔记，HTML5，CSS3/">笔记，HTML5，CSS3</a><small>1</small></li>
   
   </ul>
 </div>
