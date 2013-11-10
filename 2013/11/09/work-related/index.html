@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>AimeeChan's Blog</title>
+  <title>维基百科CDN中文翻译 | AimeeChan's Blog</title>
   <meta name="author" content="AimeeChan">
   
   <meta name="description" content="day day up">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="维基百科CDN中文翻译"/>
   <meta property="og:site_name" content="AimeeChan's Blog"/>
 
   
@@ -47,39 +47,7 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-11-10T12:57:54.000Z"><a href="/2013/11/10/cdn-translate/">11月 10 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/11/10/cdn-translate/">CDN-Translate</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
@@ -89,7 +57,7 @@
       
       
   
-    <h1 class="title"><a href="/2013/11/09/work-related/">维基百科CDN中文翻译</a></h1>
+    <h1 class="title">维基百科CDN中文翻译</h1>
   
 
     </header>
@@ -123,7 +91,29 @@
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/201311/">201311</a>
+  </div>
+
         
+  
+  <div class="tags">
+    <a href="/tags/CDN，翻译/">CDN，翻译</a>
+  </div>
+
+        <!-- Baidu Button BEGIN -->
+        <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+        <a class="bds_tsina"></a>
+        <span class="bds_more"></span>
+        <a class="shareCount"></a>
+        </div>
+        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6843077" ></script>
+        <script type="text/javascript" id="bdshell_js"></script>
+        <script type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+        </script>
+        <!-- Baidu Button END -->
       
       <div class="clearfix"></div>
     </footer>
@@ -131,147 +121,23 @@
 </article>
 
 
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-11-09T04:06:38.000Z"><a href="/2013/11/09/diary3/">11月 9 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/11/09/diary3/">diary3</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-11-03T04:39:38.000Z"><a href="/2013/11/03/diary2/">11月 3 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/11/03/diary2/">css的一些记录</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>这一周都在与css战斗，工作主要是模拟easyui，做一些样式出来，因为前端显示的网页很所都是多层嵌套，直接使用easyui很多会失效，有的由于表单的特殊性也没有合适的easyui样式套用。注意以下一些点。  </p>
-<ol>
-<li>IE不识别颜色的rgb和hsl表示，尽量使用十六进制表示。  </li>
-<li>colspan尽量在静态代码中定义，使用jQuery的attr始终没效果，colpsan和rowspan对table布局蛮重要的，用起来也很方便。</li>
-<li><p>对于js单独文件嵌入问题，一般来说以下代码  </p>
-<pre><code> (<span class="keyword">function</span>(){
-     $(window).ready(<span class="keyword">function</span>(){
-     <span class="comment">//自己的代码</span>
-     })
- }).call(<span class="keyword">this</span>)  </code></pre>
-<p> 然后把js文件放入head中就没问题，但是那天遇到了将这段js代码反复执行了几次，不得要领，最后将js文件改成  </p>
-<pre><code> (<span class="keyword">function</span>(){
-     <span class="comment">//自己的代码</span>
- }).call(<span class="keyword">this</span>)</code></pre>
-<p> 把js文件放在body之后，就没有异常。现在也没明白原因。</p>
-</li>
-<li>background-position这是针对图片本身而言，不是针对将图片放在网页中的相对位置。</li>
-<li>悬浮效果可以通过设置div的position，一个是relative，一个是absolute。</li>
-<li>jQuery函数hover(function1, function2)，function1相当于mouseover函数，function2相当于mouseout函数。</li>
-</ol>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-10-22T08:32:36.000Z"><a href="/2013/10/22/html5css3-note1/">10月 22 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/10/22/html5css3-note1/">响应式设计之媒体查询</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h3>媒体查询</h3>
-<ul>
-<li>查询媒体设备的情况，加载相应的css文件<pre><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">media</span>=<span class="value">"link rel="</span><span class="attribute">stylesheet</span>" <span class="attribute">media</span>=<span class="value">"screen and (orientation:portrait)"</span> <span class="attribute">href</span>=<span class="value">"portraitscreen.css"</span>/&gt;</span></code></pre>
-</li>
-<li>媒体查询之间用分号分隔，没有后续表达式(例如：projection，后面没有任何特性/值得组合,意味着只要是projection就满足条件)</li>
-<li>可在css样式表中使用媒体查询，<pre><code>  <span class="variable">@media</span> screen and (<span class="keyword">max</span>-device-width: <span class="number">400</span>px) {
-  h1 { <span class="keyword">color</span>: green }
-  }<span class="comment">//屏幕小于等于400px的设备上，h1元素变绿</span></code></pre>
-</li>
-<li>可使用@import 按条件引入其他样式<pre><code>  @<span class="import"><span class="keyword">import</span> url<span class="container">("<span class="title">phone</span>.<span class="title">css</span>")</span> screen and <span class="container">(<span class="title">max</span>-<span class="title">width</span>:360<span class="title">px</span>)</span>;</span>//最大宽度为<span class="number">360</span>px的设备加载phone.css</code></pre>
-<ul>
-<li>使用@import会增加HTTP请求，请谨慎使用  </li>
-</ul>
-</li>
-</ul>
-<h3>媒体查询可检测的特性
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2013/10/22/html5css3-note1/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-<nav id="pagination">
-  
-  
-    <a href="/page/2/" class="alignright next">下一页</a>
-  
-  <div class="clearfix"></div>
-</nav></div></div>
+<section id="comment">
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"shiny"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+</section>
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
