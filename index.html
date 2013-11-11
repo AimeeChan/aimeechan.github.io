@@ -87,41 +87,13 @@
       <span class="tag">&lt;<span class="title">div</span> <span class="attribute">style</span>=<span class="value">"position:relative;width:100px;background-color:green"</span>&gt;</span>B<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
       <span class="tag">&lt;<span class="title">div</span> <span class="attribute">style</span>=<span class="value">"width:400px;background-color:gray"</span>&gt;</span>CDEFGH<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
   <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
-<p>  效果如图<img src="/img/example1.jpg" alt="效果"><br>  从图可以看出B浮动在了A之上，这是因为absolute不占用文档流，后面两块会认为它不存在。relative是相对正常位置移动，且原来的位置也会保留。<br>  position可能的值及含义：</p>
-<pre><code>  <span class="tag">&lt;<span class="title">table</span> <span class="attribute">border</span>=<span class="value">“solid</span> <span class="attribute">1px</span> <span class="attribute">black</span>”&gt;</span>
-  <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">th</span>&gt;</span>值<span class="tag">&lt;/<span class="title">th</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">th</span>&gt;</span>描述<span class="tag">&lt;/<span class="title">th</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">td</span>&gt;</span>absolute<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">p</span>&gt;</span>生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">p</span>&gt;</span>元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">td</span>&gt;</span>fixed<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">p</span>&gt;</span>生成绝对定位的元素，相对于浏览器窗口进行定位。<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">p</span>&gt;</span>元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">td</span>&gt;</span>relative<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">p</span>&gt;</span>生成相对定位的元素，相对于其正常位置进行定位。<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">p</span>&gt;</span>因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">td</span>&gt;</span>static<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;<span class="title">td</span>&gt;</span>默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
-  <span class="tag">&lt;/<span class="title">table</span>&gt;</span></code></pre>
+<p>  效果如图<img src="/img/example1.jpg" alt="效果"><br>  从图可以看出B浮动在了A之上，这是因为absolute不占用文档流，后面两块会认为它不存在。relative是相对正常位置移动，且原来的位置也会保留。<br>  position可能的值及含义：  </p>
 </li>
-<li><p>一些少用的CSS属性：table-layout: fixed;//默认值为automatic<br>  <strong>固定表格布局：</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;固定表格布局与自动表格布局相比，允许浏览器更快地对表格进行布局。<br>&nbsp;&nbsp;&nbsp;&nbsp;在固定表格布局中，水平布局仅取决于表格宽度、列宽度、表格边框宽度、单元格间距，而与单元格的内容无关。<br>&nbsp;&nbsp;&nbsp;&nbsp;通过使用固定表格布局，用户代理在接收到第一行后就可以显示表格。<br><strong>自动表格布局：</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;在自动表格布局中，列的宽度是由列单元格中没有折行的最宽的内容设定的。<br>&nbsp;&nbsp;&nbsp;&nbsp;此算法有时会较慢，这是由于它需要在确定最终的布局之前访问表格中所有的内容。  </p>
-</li>
+</ul>
+<table border=“solid 1px black”><br>    <tr><br>    <th>值</th><br>    <th>描述</th><br>    </tr><br>    <tr><br>    <td>absolute</td><br>    <td><br>    <p>生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。</p><br>    <p>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</p><br>    </td><br>    </tr><br>    <tr><br>    <td>fixed</td><br>    <td><br>    <p>生成绝对定位的元素，相对于浏览器窗口进行定位。</p><br>    <p>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</p><br>    </td><br>    </tr><br>    <tr><br>    <td>relative</td><br>    <td><br>    <p>生成相对定位的元素，相对于其正常位置进行定位。</p><br>    <p>因此，“left:20” 会向元素的 LEFT 位置添加 20 像素。</p><br>    </td><br>    </tr><br>    <tr><br>    <td>static</td><br>    <td>默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。</td><br>    </tr><br></table>
+
+<ul>
+<li>一些少用的CSS属性：table-layout: fixed;//默认值为automatic<br>  <strong>固定表格布局：</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;固定表格布局与自动表格布局相比，允许浏览器更快地对表格进行布局。<br>&nbsp;&nbsp;&nbsp;&nbsp;在固定表格布局中，水平布局仅取决于表格宽度、列宽度、表格边框宽度、单元格间距，而与单元格的内容无关。<br>&nbsp;&nbsp;&nbsp;&nbsp;通过使用固定表格布局，用户代理在接收到第一行后就可以显示表格。<br><strong>自动表格布局：</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;在自动表格布局中，列的宽度是由列单元格中没有折行的最宽的内容设定的。<br>&nbsp;&nbsp;&nbsp;&nbsp;此算法有时会较慢，这是由于它需要在确定最终的布局之前访问表格中所有的内容。  </li>
 <li>overflow-x,overflow-y</li>
 <li>text-shadow,linear-gradient:IE9及以下不支持</li>
 <li>box-shadow：IE9+支持</li>
