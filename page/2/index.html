@@ -36,7 +36,7 @@
     
       <li><a href="/">博客</a></li>
     
-      <li><a href="/resume">简历</a></li>
+      <li><a href="/archives">归档</a></li>
     
       <li><a href="/about">关于</a></li>
     
@@ -46,91 +46,6 @@
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-10-22T08:32:36.000Z"><a href="/2013/10/22/html5css3-note1/">10月 22 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/10/22/html5css3-note1/">响应式设计之媒体查询</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h3>媒体查询</h3>
-<ul>
-<li>查询媒体设备的情况，加载相应的css文件<pre><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">media</span>=<span class="value">"link rel="</span><span class="attribute">stylesheet</span>" <span class="attribute">media</span>=<span class="value">"screen and (orientation:portrait)"</span> <span class="attribute">href</span>=<span class="value">"portraitscreen.css"</span>/&gt;</span></code></pre>
-</li>
-<li>媒体查询之间用分号分隔，没有后续表达式(例如：projection，后面没有任何特性/值得组合,意味着只要是projection就满足条件)</li>
-<li>可在css样式表中使用媒体查询，<pre><code>  <span class="variable">@media</span> screen and (<span class="keyword">max</span>-device-width: <span class="number">400</span>px) {
-  h1 { <span class="keyword">color</span>: green }
-  }<span class="comment">//屏幕小于等于400px的设备上，h1元素变绿</span></code></pre>
-</li>
-<li>可使用@import 按条件引入其他样式<pre><code>  @<span class="import"><span class="keyword">import</span> url<span class="container">("<span class="title">phone</span>.<span class="title">css</span>")</span> screen and <span class="container">(<span class="title">max</span>-<span class="title">width</span>:360<span class="title">px</span>)</span>;</span>//最大宽度为<span class="number">360</span>px的设备加载phone.css</code></pre>
-<ul>
-<li>使用@import会增加HTTP请求，请谨慎使用  </li>
-</ul>
-</li>
-</ul>
-<h3>媒体查询可检测的特性
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2013/10/22/html5css3-note1/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-10-22T02:35:56.000Z"><a href="/2013/10/22/diary1/">10月 22 2013</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2013/10/22/diary1/">diary1</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>入秋之后天就黑得很早，每天晚上下班的时候，走在去地铁站的马路上，看到旁边的大厦灯火零落，有种温暖的繁华的感觉。只是一进入地铁站，熙熙攘攘的人群，时刻提醒着我，生活下去的艰难。现在每天早上挤着地铁，晚上挤着地铁，下午5点开始就忍受着饥饿，回到学校都不想吃饭，不过生活还是很有规律，早上7点10分起床，收拾好，看会书，8点出门，吃个早饭，骑车去地铁站，9点到公司，准备好电脑，然后度过一天。<br>可惜的是自己的学习进度落下了，也没有去跑内环，有点长胖的趋势。缓慢的接触了一些新的东西。工作真是件辛苦的事情。工作的客户公司是广东广电，在珠江新城那边的广晟国际大厦<br><img src="/img/img1.jpg" alt="工作大厦外1"> 
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2013/10/22/diary1/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
   <article class="about">
   
   <div class="post-content">
@@ -223,14 +138,12 @@
   </ul>
 </div>
 
-
-  <iframe width="100%" height="750" class="share_self"  frameborder="0" scrolling="yes" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=750&fansRow=1&ptype=1&speed=300&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=1893496911&verifier=b6b87527&dpc=1"></iframe>
 </aside>
     <div class="clearfix"></div>
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2013 AimeeChan
+  &copy; 2014 AimeeChan
   
 </div>
 <div class="clearfix"></div></footer>
